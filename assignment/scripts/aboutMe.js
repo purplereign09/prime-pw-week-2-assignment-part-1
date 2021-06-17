@@ -42,8 +42,8 @@ let friendsPets = 2;
 console.log(2);
 
 // 11 - Add two pets to your `pets` variable
-friendsPets += 2;
-console.log(friendsPets);
+pets += 2;
+console.log(pets);
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 3;
@@ -78,7 +78,7 @@ console.log("Roll the dice!");
 
 if(pets < allowedPets){
   console.log("I can have more pets!");
-} else if (pet == allowedPets) {
+} else if (pets == allowedPets) {
   console.log("I have enough pets");
 } else {
   console.log("Oh now, I have too many pets!");
@@ -96,23 +96,25 @@ if(pets < allowedPets){
 let mostPets = 5;
 console.log(mostPets);
 
-if(pets == 0 && friendsPets == 4 && mostPets > friendsPets){
-  console.log(mostPets);
+if(pets == 0 && friendsPets == 2 && mostPets > friendsPets){
+
 }
+console.log(mostPets);
+
+
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
-mostPets = 5;
 
-switch (5) {
-  case 0:
+switch (mostPets = 5) {
+  case (pets):
   console.log("You have no pets");
   break;
-  case 4:
+  case (friendsPets):
   console.log("You have plenty but not the most");
   break;
-  case 5:
+  case (mostPets):
   console.log("You have the most pets!");
   break;
   default:
