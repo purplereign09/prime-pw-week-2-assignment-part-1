@@ -63,11 +63,12 @@ if(adventurous = true){
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 
-if (luckyNumber == 2 && adventurous == true) {
-  console.log("Roll the dice!");
-} else {
-  console.log("Game over!");
-}
+luckyNumber = 2;
+adventurous = true;
+
+if (luckyNumber == 2 && adventurous == true)
+console.log("Roll the dice!");
+
 
 // 15 - Write a conditional that console logs "I can have more pets!"
 //if the value of `pets` is less than the value of `allowedPets`,
@@ -75,14 +76,14 @@ if (luckyNumber == 2 && adventurous == true) {
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 
-if(pets <= allowedPets){
+if(pets < allowedPets){
   console.log("I can have more pets!");
 } else if (pet == allowedPets) {
   console.log("I have enough pets");
 } else {
   console.log("Oh now, I have too many pets!");
 }
-  
+
 
 // STRETCH GOALS:
 
@@ -92,6 +93,33 @@ if(pets <= allowedPets){
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
+let mostPets = 5;
+console.log(mostPets);
+
+if(pets == 0 && friendsPets == 4 && mostPets > friendsPets){
+  console.log(mostPets);
+}
+
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
+mostPets = 5;
+
+switch (5) {
+  case 0:
+  console.log("You have no pets");
+  break;
+  case 4:
+  console.log("You have plenty but not the most");
+  break;
+  case 5:
+  console.log("You have the most pets!");
+  break;
+  default:
+  console.log("Let's adopt a pet!");
+}
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
+
+    console.log((adventurous = true) ? "Adventures are great!" : "How about we stay home?");
