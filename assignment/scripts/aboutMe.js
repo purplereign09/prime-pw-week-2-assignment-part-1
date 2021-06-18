@@ -93,13 +93,14 @@ if(pets < allowedPets){
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
-let mostPets = 5;
+let mostPets = 9;
+friendsPets = 6;
 console.log(mostPets);
 
-if(pets == 0 && friendsPets == 2 && mostPets > friendsPets){
-
+if(pets < friendsPets){
+  console.log(mostPets);
 }
-console.log(mostPets);
+
 
 
 
